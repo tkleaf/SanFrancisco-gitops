@@ -81,6 +81,16 @@ software:
   fleet_maintained_apps:
     - slug: tailscale-app/darwin
       self_service: true
+    - slug: 1password/darwin
+      self_service: true
+    - slug: google-chrome/darwin
+      self_service: true
+    - slug: google-drive/darwin
+      self_service: true
+    - slug: firefox/darwin
+      self_service: true
+    - slug: microsoft-edge/darwin
+      self_service: true
   app_store_apps:
     ###########################################################
     # iOS apps
