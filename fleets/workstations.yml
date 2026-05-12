@@ -68,7 +68,9 @@ controls:
   apple_settings:
     configuration_profiles:
       - paths: ../platforms/macos/declaration-profiles/*.json
-      - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
+      - path: ../platforms/macos/configuration_profiles/disable-bluetooth-file-sharing.mobileconfig
+        labels_include_all:
+          - Department - Engineering
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
@@ -95,9 +97,9 @@ controls:
   #   • https://fleetdm.com/docs/configuration/yaml-files#windows-updates
   #   • https://fleetdm.com/guides/enforce-os-updates
   ###########################################################
-  # macos_updates:
-  #   deadline: "2030-04-01"
-  #   minimum_version: "26.0"
+  macos_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.4"
   #   update_new_hosts: true
   # windows_updates:
   #   deadline_days: 7
@@ -193,3 +195,4 @@ software:
 
   app_store_apps: # Apps to install via VPP from the macOS App Store, if any
     # …
+
