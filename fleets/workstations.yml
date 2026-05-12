@@ -16,6 +16,9 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
 controls:
+  ipados_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.2"
   setup_experience:
     ###########################################################
     # Configure the macOS setup experience
